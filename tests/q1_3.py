@@ -6,32 +6,28 @@ test = {
       'cases': [
         {
           'code': r"""
-          >>> spicy_nacho == 'Spicy!'
-          True
+          >>> assert spicy_nacho == 'Spicy!'
           """,
           'hidden': False,
           'locked': False
         },
         {
           'code': r"""
-          >>> nacho_reaction('cheese')
-          'Cheesy!'
+          >>> assert nacho_reaction('cheese') == 'Cheesy!'
           """,
           'hidden': False,
           'locked': False
         },
         {
           'code': r"""
-          >>> nacho_reaction('both')
-          'Wow!'
+          >>> assert nacho_reaction('both') == 'Wow!'
           """,
           'hidden': False,
           'locked': False
         },
         {
           'code': r"""
-          >>> nacho_reaction('neither')
-          'Meh.'
+          >>> assert nacho_reaction('neither') == 'Meh.'
           """,
           'hidden': False,
           'locked': False

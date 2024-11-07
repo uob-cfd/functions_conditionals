@@ -6,8 +6,7 @@ test = {
       'cases': [
         {
           'code': r"""
-          >>> 2 < number_wow_reactions < 6
-          True
+          >>> assert 2 < number_wow_reactions < 6
           """,
           'hidden': False,
           'locked': False
@@ -15,8 +14,7 @@ test = {
         {
           'code': r"""
           >>> # Incorrect value for number_wow_reactions
-          >>> number_wow_reactions == 4
-          True
+          >>> assert number_wow_reactions == 4
           """,
           'hidden': False,
           'locked': False

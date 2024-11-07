@@ -6,8 +6,7 @@ test = {
       'cases': [
         {
           'code': r"""
-          >>> number_cheese == 3
-          True
+          >>> assert number_cheese == 3
           """,
           'hidden': False,
           'locked': False

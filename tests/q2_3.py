@@ -6,8 +6,7 @@ test = {
       'cases': [
         {
           'code': r"""
-          >>> longer_than_five == 35453
-          True
+          >>> assert longer_than_five == 35453
           """,
           'hidden': False,
           'locked': False

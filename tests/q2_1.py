@@ -9,8 +9,7 @@ test = {
           # scores = np.sum(trials, axis=1)
           # np.min(scores), np.max(scores)
           'code': r"""
-          >>> 5090 <= total_score <= 5900
-          True
+          >>> assert 5090 <= total_score <= 5900
           """,
           'hidden': False,
           'locked': False

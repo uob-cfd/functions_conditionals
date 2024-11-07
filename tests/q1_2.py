@@ -6,8 +6,7 @@ test = {
       'cases': [
         {
           'code': r"""
-          >>> say_please == 'More please'
-          True
+          >>> assert say_please == 'More please'
           """,
           'hidden': False,
           'locked': False

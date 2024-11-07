@@ -6,8 +6,7 @@ test = {
       'cases': [
         {
           'code': r"""
-          >>> 5.090 <= average_score <= 5.900
-          True
+          >>> assert 5.090 <= average_score <= 5.900
           """,
           'hidden': False,
           'locked': False

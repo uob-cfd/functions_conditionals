@@ -6,8 +6,7 @@ test = {
       'cases': [
         {
           'code': r"""
-          >>> 0.58 <= chance_of_all_different <= 0.68
-          True
+          >>> assert 0.58 <= chance_of_all_different <= 0.68
           """,
           'hidden': False,
           'locked': False

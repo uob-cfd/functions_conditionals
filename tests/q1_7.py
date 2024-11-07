@@ -6,8 +6,7 @@ test = {
       'cases': [
         {
           'code': r"""
-          >>> nacho_result in ['Wow!', 'Meh.', 'Okay!']
-          True
+          >>> assert nacho_result in ['Wow!', 'Meh.', 'Okay!']
           """,
           'hidden': False,
           'locked': False
@@ -20,8 +19,7 @@ test = {
           >>> ten_nachos_reactions = pd.DataFrame()
           >>> ten_nachos_reactions['Nachos'] = ten_nachos
           >>> ten_nachos_reactions['Reactions'] = ten_nachos_reactions['Nachos'].apply(nacho_reaction)
-          >>> both_or_neither(ten_nachos_reactions)
-          'Wow!'
+          >>> assert both_or_neither(ten_nachos_reactions) == 'Wow!'
           """,
           'hidden': False,
           'locked': False
@@ -33,8 +31,7 @@ test = {
           >>> seven_nachos_reactions = pd.DataFrame()
           >>> seven_nachos_reactions['Nachos'] = seven_nachos
           >>> seven_nachos_reactions['Reactions'] = seven_nachos_reactions['Nachos'].apply(nacho_reaction)
-          >>> both_or_neither(seven_nachos_reactions)
-          'Okay!'
+          >>> assert both_or_neither(seven_nachos_reactions) == 'Okay!'
           """,
           'hidden': False,
           'locked': False
